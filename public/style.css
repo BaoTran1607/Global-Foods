@@ -18,6 +18,13 @@ img{
     height: 100%;
     display: block;
 }
+.section-gap{
+    width: 100%;
+    height: 80px;
+}
+.none{
+    opacity: 0;
+}
 
 /*HEADER*/
 
@@ -29,6 +36,7 @@ header{
     z-index: 5;
     top: 0px;
     left: 0px;
+    border-bottom: 1px solid gainsboro;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .header-container{
@@ -166,4 +174,59 @@ header{
     overflow: hidden;
     width: 380px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* PRODUCTS */
+
+.product-header{
+    width: 1050px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+.product-heading-side{
+    width: 361px;
+    border-radius: 3px;
+    height: 3px;
+    background-color: gainsboro;
+}
+.product-heading{
+    color: darkgreen;
+    font-size: 30px;
+    font-weight: 700;
+}
+.product-container{
+    margin-right: auto;
+    margin-left: auto;
+    width: 1040px;
+    display: flex;
+    gap: 29px;
+    flex-wrap: wrap;
+}
+.product-card{
+    overflow: hidden;
+    width: 238px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.product-img{
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 4px 4px 14px 4px;
+    width: 230px;
+    height: auto; 
+}
+.product-name{
+    max-width: 75%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: #3a3a3a;
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 10px;
 }
