@@ -18,6 +18,9 @@ img{
     height: 100%;
     display: block;
 }
+p{
+    margin-bottom: 10px;
+}
 .none{
     opacity: 0;
 }
@@ -25,6 +28,7 @@ img{
     color: darkgreen;
     font-size: 30px;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 .heading-wall{
     width: 100%;
@@ -74,6 +78,13 @@ header{
     color: darkgreen;
 }
 .nav-active{
+    color: darkgreen;
+}
+.focus{
+    font-weight: 700;
+}
+.name-focus{
+    font-weight: 700;
     color: darkgreen;
 }
 
@@ -150,9 +161,6 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.overview-heading{
-    margin-bottom: 20px;
-}
 .overview-text{
     width: 600px;
     font-size: 19px;
@@ -160,13 +168,7 @@ header{
     flex-direction: column;
     gap: 20px;
 }
-.focus{
-    font-weight: 700;
-}
-.name-focus{
-    font-weight: 700;
-    color: darkgreen;
-}
+
 .overview-img{
     border-radius: 5px;
     overflow: hidden;
@@ -253,10 +255,8 @@ header{
     margin-right: auto;
     margin-left: auto;
 }
-.history-heading{
-    margin-bottom: 20px;
-}
 .history-container{
+    margin-top: 32px;
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -268,10 +268,10 @@ header{
 .history-card{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 303px;
+    height: 189px;
     border-radius: 3px;
     background-color: whitesmoke;
     border-top: 5px solid darkgreen;
-    
 }
 .history-year{
     color: #3a3a3a;
@@ -286,11 +286,50 @@ header{
     font-size: 20px;
     text-align: center;
     padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .history-arrow{
     color: #3a3a3a;
     font-size: 20px;
     width: 20px;
+}
+
+/* FUTURE */
+
+.future{
+    padding-top: 80px;
+    width: 1050px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.future-container{
+    width: 1050px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.future-img{
+    border-radius: 5px;
+    overflow: hidden;
+    width: 380px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.future-text{
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.future-title{
+    font-size: 25px;
+    font-weight: 700;
+    color: #3a3a3a;
+}
+.future-content{
+    font-size: 19px;
 }
