@@ -21,11 +21,20 @@ img{
 p{
     margin-bottom: 10px;
 }
+button{
+    border-radius: inherit;
+    border: inherit;
+    background-color: inherit;
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+    padding: inherit;
+}
 .none{
     opacity: 0;
 }
 .heading-text{
-    color: darkgreen;
+    color: #202456;
     font-size: 30px;
     font-weight: 700;
 }
@@ -36,6 +45,16 @@ p{
     height: 3px;
     background-color: gainsboro;
     margin-bottom: 30px;
+}
+.focus{
+    font-weight: 700;
+}
+.name-focus{
+    font-weight: 700;
+    color: #373e94;
+}
+.d-none{
+    display: none;
 }
 
 /*HEADER*/
@@ -75,31 +94,55 @@ header{
     font-size: 13px;
 }
 .nav-item:hover{
-    color: darkgreen;
+    color: #202456;
 }
 .nav-active{
-    color: darkgreen;
+    color: #202456;
 }
-.focus{
+.nav-language{
+    color: white;
+    width: 80px;
+    padding-right: 10px;
+    position: relative;
+    font-size: 20px;
     font-weight: 700;
 }
-.name-focus{
-    font-weight: 700;
-    color: darkgreen;
+.lang-active{
+    width: 80px;
+    padding: 6px 6px 6px 6px;
+    background-color: #23aed2;
+    border-radius: 10px;
+}
+.lang-list{
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #23aed2;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.lang-item{
+    margin-top: 10px;
 }
 
 /* BANNER */
 
 .banner{
+    padding-top: 70px;
     width: 100%;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    border-bottom: 1px solid lightgray;
 }
 .banner-img{
     width: 100%;
     height: auto;
 }
 .banner-content{
+    opacity: 0;
     width: 51%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.45);
@@ -168,7 +211,6 @@ header{
     flex-direction: column;
     gap: 20px;
 }
-
 .overview-img{
     border-radius: 5px;
     overflow: hidden;
@@ -197,13 +239,13 @@ header{
     background-color: gainsboro;
 }
 .product-heading{
-    color: darkgreen;
+    color: #202456;
     font-size: 30px;
     font-weight: 700;
 }
 .product-background{
     width: 100%;
-    background-color: darkgreen;
+    background-color: #d9ebeb;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -214,6 +256,13 @@ header{
     display: flex;
     gap: 29px;
     flex-wrap: wrap;
+}
+.product-viewmore{
+    font-size: 19px;
+    font-weight: 700;
+    color: #202456;
+    text-align: center;
+    margin-top: 20px;
 }
 .product-card{
     background-color: white;
@@ -250,7 +299,7 @@ header{
     font-size: 17px;
     font-weight: 700;
     text-align: center;
-    color: darkgreen;
+    color: #23aed2;
     padding-bottom: 10px;
 }
 
@@ -262,8 +311,20 @@ header{
     margin-right: auto;
     margin-left: auto;
 }
+.history-header{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+.history-header-side{
+    width: 379px;
+    height: 3px;
+    background-color: #dcdcdc;
+    border-radius: 3px;
+}
 .history-container{
-    margin-top: 50px;
+    margin-top: 70px;
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -278,7 +339,7 @@ header{
     height: 189px;
     border-radius: 3px;
     background-color: whitesmoke;
-    border-top: 5px solid darkgreen;
+    border-top: 5px solid #23aed2;
 }
 .history-year{
     color: #3a3a3a;
@@ -335,7 +396,7 @@ header{
 .future-title{
     font-size: 25px;
     font-weight: 700;
-    color: #3a3a3a;
+    color: #23aed2;
 }
 .future-content{
     font-size: 19px;
@@ -378,13 +439,7 @@ header{
 .certificate-img{
     overflow: hidden;
     width: 100%;
-    border: 2px solid darkgreen;
-}
-.certificate-img:hover .img-certificate{
-    scale: 1.05;
-}
-.img-certificate{
-    transition: 0.2s;
+    border: 2px solid #202456;
 }
 .certificate-title{
     font-size: 20px;
@@ -404,6 +459,7 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 16px;
 }
 .partner-header-side{
@@ -424,4 +480,54 @@ header{
 .partner-card{
     width: 180px;
     height: auto;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 120px;
+    width: 100%;
+    background-color: #373e94;
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 0px 8px;
+}
+.footer-container{
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-wall{
+    width: 100px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: white;
+}
+.footer-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.footer-text{
+    width: 400px;
+    color: white;
+    font-size: 16px;
+}
+.footer-para{
+    margin-bottom: 10px;
+}
+.footer-mark{
+    width: 100%;
+    height: 50px;
+    background-color: #202456;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 30px;
 }
